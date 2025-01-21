@@ -52,7 +52,7 @@ The Flnc tool has two subcommands single and pair. The single subcommand can tak
 
 **Usage** 
 ```bash
-pLncFusion.py [-h] -1 LEFT_FQ -2 RIGHT_FQ [-o OUTPUT_DIR] [-c CPU]
+LncFusion.py [-h] -1 LEFT_FQ -2 RIGHT_FQ [-o OUTPUT_DIR] [-c CPU]
 
 LncFusion: A method to identify lncRNA-derived fusion transcripts from RNA-seq data.
 
