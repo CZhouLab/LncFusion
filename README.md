@@ -29,7 +29,7 @@ To use LncFusino, you will need the following programs in your PATH:
 
 ## Installation
 
-### Step 1: Download Flnc software from GitHub
+### Step 1: Download LncFusion software from GitHub
 ```bash
 cd /home/username/
 git clone https://github.com/CZhouLab/LncFusion.git
