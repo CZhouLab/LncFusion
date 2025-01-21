@@ -48,8 +48,6 @@ chmod 755 *.py
 
 -	LncFusion can accept the FASTQ files uncompressed (.fastq) or compressed by gzip (.fastq.gz) as input files. 
 
--	The reference gene annotation should be the GTF format file for hg38 assembly.
-
 **Usage** 
 ```bash
 LncFusion.py [-h] -1 LEFT_FQ -2 RIGHT_FQ [-o OUTPUT_DIR] [-c CPU]
