@@ -6,11 +6,11 @@ LncFusion is a computational pipeline designed to identify both lncRNA-involved 
 
 ![workflow](Fig1.pdf)
 
-**Please cite our paper at *Non-Coding RNA* journal (https://doi.org/10.3390/ncrna8050070), if you find Flnc useful for your research. 
+**Please cite our paper at *medRxiv* (https://medrxiv.org/cgi/content/short/2025.01.16.25320696v1), if you find Flnc useful for your research. 
 
 Version: 1.0.0
 
-Last Modified: 07/27/2022
+Last Modified: 01/20/2025
 
 Authors: Zixiu Li (zixiu.li@umassmed.edu), Chan Zhou (chan.zhou@umassmed.edu)
 
