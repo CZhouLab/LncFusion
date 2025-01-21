@@ -40,9 +40,7 @@ chmod 755 *.py
 ### Step 2: Download LIB folder from Zenodo (wait to update)
 
 
-## Running Flnc
-
-The Flnc tool has two subcommands single and pair. The single subcommand can take three types of input files: single-end RNA-seq data in FASTQ format, and transcript data either in BED format or in FASTA format. The pair subcommand can take two ends of the paired-end RNA-seq data in FASTQ format as the input.
+## Running LncFusion
 
 **Note:**
 
