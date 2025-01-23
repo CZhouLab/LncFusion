@@ -18,7 +18,7 @@ Maintainer: Zixiu Li
 
 ## Prerequisites
 
-To use LncFusino, you will need the following programs in your PATH:
+To use LncFusion, you will need the following programs in your PATH:
 
 •       apptainer (>=1.3.5)
 
