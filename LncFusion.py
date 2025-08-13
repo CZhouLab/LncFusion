@@ -659,17 +659,17 @@ logging.info("=========================================")
 
 TotalReadCount = get_paired_end_read_count(args.left_fq, args.right_fq)
 
-#STARFUSION(args.left_fq, args.right_fq, output_dir+"/STARFUSION", cpu)
+STARFUSION(args.left_fq, args.right_fq, output_dir+"/STARFUSION", cpu)
 
-#ARRIBA(args.left_fq, args.right_fq, output_dir+"/ARRIBA", cpu)
+ARRIBA(args.left_fq, args.right_fq, output_dir+"/ARRIBA", cpu)
 
-#STARSEQR(args.left_fq, args.right_fq, output_dir+"/STARSEQR", cpu)
+STARSEQR(args.left_fq, args.right_fq, output_dir+"/STARSEQR", cpu)
 
-#BP_detection(output_dir + "/STARFUSION/star-fusion.fusion_predictions.tsv", output_dir + "/ARRIBA/fusions.tsv", output_dir + "/STARSEQR_STAR-SEQR/STARSEQR_STAR-SEQR_breakpoints.txt", output_dir)
+BP_detection(output_dir + "/STARFUSION/star-fusion.fusion_predictions.tsv", output_dir + "/ARRIBA/fusions.tsv", output_dir + "/STARSEQR_STAR-SEQR/STARSEQR_STAR-SEQR_breakpoints.txt", output_dir)
 
-#Consensus_filtering(output_dir + "/breakpoints_detection.txt", output_dir)
+Consensus_filtering(output_dir + "/breakpoints_detection.txt", output_dir)
 
-#Other_filtering(output_dir + "/Consensus_filtering.txt", output_dir)
+Other_filtering(output_dir + "/Consensus_filtering.txt", output_dir)
 
 Annotation(output_dir+"/Other_filtering.txt", output_dir+"/breakpoints_detection.txt", TotalReadCount, output_dir)
 
