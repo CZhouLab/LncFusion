@@ -51,7 +51,7 @@ tar -xzvf Lib.tar.gz
 **Note:**
 
 -	LncFusion can accept the FASTQ files uncompressed (.fastq) or compressed by gzip (.fastq.gz) as input files.
--	LncFusion is recommended to be run on a computing cluster due to the high memory demands of STAR-Fusion, Arriba, and STAR-SEQR (all of which use STAR for alignment). In the LSF job script, #BSUB -n 20 specifies 20 CPU cores, and #BSUB -R rusage\[mem=20G\] requests 20 GB of memory per core.
+-	LncFusion is recommended to be run on a computing cluster due to the high memory demands of STAR-Fusion, Arriba, and STAR-SEQR. In the LSF job script, #BSUB -n 20 specifies 20 CPU cores, and #BSUB -R rusage\[mem=20G\] requests 20 GB of memory per core.
 
 **Usage** 
 
