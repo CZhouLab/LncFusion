@@ -51,18 +51,10 @@ tar -xzvf Lib.tar.gz
 **Note:**
 
 -	LncFusion can accept the FASTQ files uncompressed (.fastq) or compressed by gzip (.fastq.gz) as input files.
--	LncFusion is recommended to be run on a computing cluster due to high memory usage from STAR-Fusion, Arriba, and STAR-SEQR (all of which use STAR for alignment). Example LSF job script:
-#BSUB -L /bin/bash
-#BSUB -q long
-#BSUB -n 20
-#BSUB -W 2:00
-#BSUB -J LncFusion
-#BSUB -o LncFusion.out
-#BSUB -e LncFusion.err
-#BSUB -R rusage[mem=20G]
+-	LncFusion is recommended to be run on a computing cluster due to the high memory demands of STAR-Fusion, Arriba, and STAR-SEQR (all of which use STAR for alignment). In the LSF job script, #BSUB -n 20 specifies 20 CPU cores, and #BSUB -R rusage\[mem=20G\] requests 20 GB of memory per core.
 
 **Usage** 
-```bash
+
 LncFusion.py [-h] -1 LEFT_FQ -2 RIGHT_FQ [-o OUTPUT_DIR] [-c CPU]
 
 LncFusion: A method to identify lncRNA-derived fusion transcripts from RNA-seq data.
