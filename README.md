@@ -10,7 +10,7 @@ LncFusion is a computational pipeline designed to identify both lncRNA-involved 
 
 Version: 1.0.0
 
-Last Modified: 01/20/2025
+Last Modified: 08/13/2025
 
 Authors: Zixiu Li (zixiu.li@umassmed.edu), Chan Zhou (chan.zhou@umassmed.edu)
 
@@ -41,7 +41,9 @@ chmod 755 *.py
 
 ### Step 2: Download LIB folder from Dropbox
 ```bash
-https://www.dropbox.com/scl/fo/qtxfwjn5r6zaxnpja3t06/AEtRNZgXXYKt-toZaw_-OQI?rlkey=vszfv5wgi62wwvbcdg6nq8ney&st=pq657m93&dl=0
+cd /home/username/LncFusion
+wget https://www.dropbox.com/scl/fo/qtxfwjn5r6zaxnpja3t06/AEtRNZgXXYKt-toZaw_-OQI?rlkey=vszfv5wgi62wwvbcdg6nq8ney&st=pq657m93&dl=0
+tar -xzvf Lib.tar.gz
 ```
 
 ## Running LncFusion
@@ -68,6 +70,10 @@ Optional arguments:
 			Default: 20
 	-h/--help 	Show help message and exit
 ```
+
+## Example
+
+
 ## Output files
 LncFusion will generate two output files, which can be found in the output folder inside your specified output directory.
 
