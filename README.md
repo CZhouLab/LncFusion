@@ -72,7 +72,16 @@ Optional arguments:
 ```
 
 ## Example
-
+**Example 1: spefified output direcotry**
+```bash
+module load apptainer/1.3.5
+python LncFusion.py -1 BT474f_1.fq.gz -2 BT474f_2.fq.gz -o BT474f
+```
+**Example 2: no spefified output direcotry**
+```bash
+module load apptainer/1.3.5
+python LncFusion.py -1 BT474f_1.fq.gz -2 BT474f_2.fq.gz
+```
 
 ## Output files
 LncFusion will generate two output files, which can be found in the output folder inside your specified output directory.
