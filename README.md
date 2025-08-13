@@ -68,27 +68,29 @@ Optional arguments:
 			Default: 20
 	-h/--help 	Show help message and exit
 ```
-## Output files
+## Output files'
+LncFusion will generate two output files, which can be found in the output/ folder inside your specified output directory.
+
 **(1) FusionGene_Annotation.txt**: a tab-delimited text file containing information about each detected fusion gene. The columns are defined as follows:
 | Field(column)| Description                                   |
 | :-----------:| :---------------------------------------------|
-| FusionGene	       | The fusion gene identifier in the format HeadGene::TailGene |
-| FusionType	       | The category of fusion (e.g., lncRNA-fusion, mRNA-fusion) |
-| HeadGene_Biotype	       | The biotype of the head gene (e.g., protein_coding, lncRNA) |
-| TailGene_Biotype    | The biotype of the tail gene (e.g., protein_coding, lncRNA) |
+| FusionGene	       | Fusion gene identifier in the format HeadGene::TailGene |
+| FusionType	       | Fusion category (e.g., lncRNA-fusion, mRNA-fusion) |
+| HeadGene_Biotype	       | Biotype of the head (5′) gene (e.g., protein_coding, lncRNA) |
+| TailGene_Biotype    | Biotype of the tail (3′) gene (e.g., protein_coding, lncRNA) |
 | HeadGene_Location     | Genomic coordinates of the head gene in the format chr:start-end:strand |
 | TailGene_Location  | Genomic coordinates of the tail gene in the format chr:start-end:strand |
-| Genomic_Oigination     | Genomic relationship between the head and tail genes, specifying whether the fusion is intra-chromosomal (on the same chromosome, either same or opposite strand) or inter-chromosomal (on different chromosomes), and, for intra-chromosomal fusions, indicating whether the tail gene is located genomic upstream or downstream relative to the head gene |
-| Distance(HeadGene,TailGene)    | Genomic distance between the head and tail genes, measured in base pairs. For fusions involving genes on different chromosomes, or genes located on opposite strands even within the same chromosome, the value is reported as Inf |
+| Genomic_Oigination     | Genomic relationship between the head and tail genes, indicating whether the fusion is intra-chromosomal (same chromosome, same or opposite strand) or inter-chromosomal (different chromosomes). For intra-chromosomal fusions, also specifies whether the tail gene is located genomic upstream or downstream relative to the head gene |
+| Distance(HeadGene,TailGene)    | Genomic distance between the head and tail genes in base pairs. For fusions on different chromosomes, or on opposite strands even within the same chromosome, the value is reported as Inf |
 
 
 **(2) Breakpoint_Annotation.txt**: a tab-delimited text file summarizing detected fusion events at the breakpoint level. Each row corresponds to a specific fusion breakpoint pair, and columns are defined as follows:
 | Field(column)| Description                                   |
 | :-----------:| :---------------------------------------------|
 | BreakPoint	       | Genomic coordinates of the fusion breakpoints in the format chr<chrom1>:<position1>:<strand1>_chr<chrom2>:<position2>:<strand2>. The first coordinate corresponds to the head breakpoint, and the second to the tail breakpoint |
-| FusionGene	       |Fusion gene identifier in the format HeadGene::TailGene |
-| FusionDetectionTool	       | Semicolon-separated list of fusion detection tools that identified this event (e.g., STAR-Fusion;STAR-SEQR;Arriba) |
-| Distance(HeadBreakPoint,TailBreakPoint)    | Genomic distance between the head and tail breakpoints in base pairs. If the breakpoints are on different chromosomes, or on opposite strands even within the same chromosome, the value is reported as Inf. |
+| FusionGene	       | Fusion gene identifier in the format HeadGene::TailGene |
+| FusionDetectionTool	       | Semicolon-separated list of fusion detection tools that identified the event (e.g., STAR-Fusion;STAR-SEQR;Arriba) |
+| Distance(HeadBreakPoint,TailBreakPoint)    | Genomic distance between the head and tail breakpoints in base pairs. If located on different chromosomes, or on opposite strands within the same chromosome, the value is reported as Inf |
 | JunctionReadCount     | The number of paired end discordant reads, reported as the maximum value obtained across all three fusion detection methods |
 | SpanningFragCount  | The number of paired end reads spanning the exact fusion junction, reported as the maximum value obtained across all three fusion detection methods |
 | FFPM    | Fusion fragments per million total reads |
