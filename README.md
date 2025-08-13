@@ -39,7 +39,8 @@ cd LncFusion
 chmod 755 *.py
 ```
 
-### Step 2: Download LIB folder from Zenodo (wait to update)
+### Step 2: Download LIB folder from Dropbox
+https://www.dropbox.com/scl/fo/qtxfwjn5r6zaxnpja3t06/AEtRNZgXXYKt-toZaw_-OQI?rlkey=vszfv5wgi62wwvbcdg6nq8ney&st=pq657m93&dl=0
 
 
 ## Running LncFusion
