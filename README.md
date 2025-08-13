@@ -68,3 +68,22 @@ Optional arguments:
 			Default: 20
 	-h/--help 	Show help message and exit
 ```
+## Output files
+(1) FusionGene_Annotation.txt: a tab-delimited text file containing information about each detected fusion gene. The columns are defined as follows:
+| Field(column)| Description                                   |
+| :-----------:| :---------------------------------------------|
+| FusionGene	       | The fusion gene identifier in the format HeadGene::TailGene                              |
+| FusionType	       | The category of fusion (e.g., lncRNA-fusion, mRNA-fusion)                            |
+| HeadGene_Biotype	       | The biotype of the head (5′) gene (e.g., protein_coding, lncRNA)                       |
+| TailGene_Biotype    | The biotype of the tail (3′) gene (e.g., protein_coding, lncRNA)      |
+| HeadGene_Location     | Genomic coordinates of the head gene in the format chr:start-end:strand     |
+| TailGene_Location  | Genomic coordinates of the tail gene in the format chr:start-end:strand                           |
+| Genomic_Oigination     | Genomic relationship between the head and tail genes, specifying whether the fusion is intra-chromosomal (on the same chromosome, either same or opposite strand) or inter-chromosomal (on different chromosomes), and, for intra-chromosomal fusions, indicating whether the tail gene is located genomic upstream or downstream relative to the head gene   |
+| Distance(HeadGene,TailGene)    | Genomic distance between the head and tail genes, measured in base pairs. For fusions involving genes on different chromosomes, or genes located on opposite strands even within the same chromosome, the value is reported as Inf |
+
+
+(3) putative_lncRNA.bed: Contains putative lncRNAs, which are transcripts without coding abilities. The BED file follows the standard BED format with the full 12 fields. (https://genome.ucsc.edu/FAQ/FAQformat.html#format1)
+
+(4) putative_lncRNA_infor.txt: contains the expression and genomic features information of all putative lncRNAs with the same format as the “true_lncRNA_infor.\<model\>.txt” outfile.
+
+(5) Alignment summary file for each replicate output by HISAT2. 
