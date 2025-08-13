@@ -69,7 +69,7 @@ Optional arguments:
 	-h/--help 	Show help message and exit
 ```
 ## Output files
-(1) FusionGene_Annotation.txt: a tab-delimited text file containing information about each detected fusion gene. The columns are defined as follows:
+(1) **FusionGene_Annotation.txt**: a tab-delimited text file containing information about each detected fusion gene. The columns are defined as follows:
 | Field(column)| Description                                   |
 | :-----------:| :---------------------------------------------|
 | FusionGene	       | The fusion gene identifier in the format HeadGene::TailGene |
@@ -82,7 +82,7 @@ Optional arguments:
 | Distance(HeadGene,TailGene)    | Genomic distance between the head and tail genes, measured in base pairs. For fusions involving genes on different chromosomes, or genes located on opposite strands even within the same chromosome, the value is reported as Inf |
 
 
-(2) Breakpoint_Annotation.txt: a tab-delimited text file summarizing detected fusion events at the breakpoint level. Each row corresponds to a specific fusion breakpoint pair, and columns are defined as follows:
+(2) **Breakpoint_Annotation.txt**: a tab-delimited text file summarizing detected fusion events at the breakpoint level. Each row corresponds to a specific fusion breakpoint pair, and columns are defined as follows:
 | Field(column)| Description                                   |
 | :-----------:| :---------------------------------------------|
 | BreakPoint	       | Genomic coordinates of the fusion breakpoints in the format chr<chrom1>:<position1>:<strand1>_chr<chrom2>:<position2>:<strand2>. The first coordinate corresponds to the head breakpoint, and the second to the tail breakpoint |
