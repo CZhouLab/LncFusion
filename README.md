@@ -69,7 +69,7 @@ Optional arguments:
 	-h/--help 	Show help message and exit
 ```
 ## Output files
-LncFusion will generate two output files, which can be found in the output/ folder inside your specified output directory.
+LncFusion will generate two output files, which can be found in the output folder inside your specified output directory.
 
 **(1) FusionGene_Annotation.txt**: a tab-delimited text file containing information about each detected fusion gene. The columns are defined as follows:
 | Field(column)| Description                                   |
