@@ -74,15 +74,27 @@ Optional arguments:
 ```
 
 ## Example
-**Example 1: spefified output direcotry**
+**In LncFusion.lsf file**
 ```bash
+#! /bin/bash
+  
+#BSUB -L /bin/bash
+#BSUB -q long
+#BSUB -n 20 -W 2:00
+#BSUB -J LncFusion
+#BSUB -o LncFusion.out
+#BSUB -e LncFusion.err
+#BSUB -R rusage[mem=20G]
+#BSUB -R span[hosts=1]
+
 module load apptainer/1.3.5
-python LncFusion.py -1 BT474f_1.fq.gz -2 BT474f_2.fq.gz -o BT474f
+module load python3
+
+python3 LncFusion.py -1 BT474f_1.fq.gz -2 BT474f_2.fq.gz -o BT474f
 ```
-**Example 2: no spefified output direcotry**
+**Submit the LncFusion.lsf job to cluster**
 ```bash
-module load apptainer/1.3.5
-python LncFusion.py -1 BT474f_1.fq.gz -2 BT474f_2.fq.gz
+bsub <LncFusion.lsf
 ```
 
 ## Output files
