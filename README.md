@@ -80,7 +80,7 @@ Optional arguments:
   
 #BSUB -L /bin/bash
 #BSUB -q long
-#BSUB -n 20 -W 2:00
+#BSUB -n 20 -W 4:00
 #BSUB -J LncFusion
 #BSUB -o LncFusion.out
 #BSUB -e LncFusion.err
