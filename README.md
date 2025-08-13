@@ -54,6 +54,7 @@ tar -xzvf Lib.tar.gz
 -	LncFusion is recommended to be run on a computing cluster due to the high memory demands of STAR-Fusion, Arriba, and STAR-SEQR. In the LSF job script, #BSUB -n 20 specifies 20 CPU cores, and #BSUB -R rusage\[mem=20G\] requests 20 GB of memory per core.
 
 **Usage** 
+```bash
 
 LncFusion.py [-h] -1 LEFT_FQ -2 RIGHT_FQ [-o OUTPUT_DIR] [-c CPU]
 
