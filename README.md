@@ -74,13 +74,14 @@ Optional arguments:
 ```
 
 ## Example
-**In LncFusion.lsf file**
+**LSF job script (LncFusion.lsf)**
 ```bash
-#! /bin/bash
-  
+#!/bin/bash
+
 #BSUB -L /bin/bash
 #BSUB -q long
-#BSUB -n 20 -W 4:00
+#BSUB -n 20
+#BSUB -W 4:00
 #BSUB -J LncFusion
 #BSUB -o LncFusion.out
 #BSUB -e LncFusion.err
@@ -92,7 +93,7 @@ module load python3
 
 python3 LncFusion.py -1 BT474f_1.fq.gz -2 BT474f_2.fq.gz -o BT474f
 ```
-**Submit the LncFusion.lsf job to cluster**
+**Submit the job to the cluster**
 ```bash
 bsub <LncFusion.lsf
 ```
