@@ -42,7 +42,7 @@ chmod 755 *.py
 ### Step 2: Download LIB folder from Dropbox
 ```bash
 cd /home/username/LncFusion
-wget https://www.dropbox.com/scl/fo/qtxfwjn5r6zaxnpja3t06/AEtRNZgXXYKt-toZaw_-OQI?rlkey=vszfv5wgi62wwvbcdg6nq8ney&st=pq657m93&dl=0
+wget -O Lib.tar.gz "https://www.dropbox.com/scl/fi/xaoqqnuv7eumb24htzt7e/Lib.tar.gz?rlkey=61ltq5bkrhjw4bgk7w9yzmw31&st=prwwkzn0&dl=1"
 tar -xzvf Lib.tar.gz
 ```
 
