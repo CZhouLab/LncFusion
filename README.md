@@ -92,7 +92,7 @@ Optional arguments:
 module load apptainer/1.3.5
 module load python3
 
-python3 LncFusion.py -1 BT474f_1.fq.gz -2 BT474f_2.fq.gz -o BT474f
+python3 LncFusion.py -1 Test_Data/BT474f_1.fq.gz -2 Test_Data/BT474f_2.fq.gz -o BT474f
 ```
 **Submit the job to the cluster**
 ```bash
