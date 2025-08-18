@@ -39,7 +39,7 @@ cd LncFusion
 chmod 755 *.py
 ```
 
-### Step 2: Download LIB folder from Dropbox
+### Step 2: Download LIB folder from Zenodo
 ```bash
 cd /home/username/LncFusion
 wget -c https://zenodo.org/records/16867177/files/Lib.tar.gz?download=1
