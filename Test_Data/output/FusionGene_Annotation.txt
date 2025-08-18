@@ -1,0 +1,27 @@
+FusionGene	FusionType	HeadGene_Biotype	TailGene_Biotype	HeadGene_Location	TailGene_Location	Genomic_Oigination	Distance(HeadGene,TailGene)
+THRA::HSALNG0117086	lncRNA-fusion	protein_coding	lncRNA	chr17:40058290-40093867:+	chr17:48215441-48309400:+	intra-chromosomal,same strand,tail downstream	8121574
+RPS6KB1::SNF8	mRNA-fusion	protein_coding	protein_coding	chr17:59893046-59950574:+	chr17:48929316-48944842:-	intra-chromosomal,opposite strand	Inf
+VAPB::IKZF3	mRNA-fusion	protein_coding	protein_coding	chr20:58389229-58451101:+	chr17:39757718-39864312:-	inter-chromosomal	Inf
+AHCTF1::NAAA	mRNA-fusion	protein_coding	protein_coding	chr1:246839098-246931948:-	chr4:75913660-75941013:-	inter-chromosomal	Inf
+ZMYND8::CEP250	mRNA-fusion	protein_coding	protein_coding	chr20:47209214-47356889:-	chr20:35455164-35519280:+	intra-chromosomal,opposite strand	Inf
+STX16::RAE1	mRNA-fusion	protein_coding	protein_coding	chr20:58651253-58679526:+	chr20:57351223-57379211:+	intra-chromosomal,same strand,tail upstream	1272042
+ACACA::STAC2	mRNA-fusion	protein_coding	protein_coding	chr17:37084992-37406836:-	chr17:39210541-39225945:-	intra-chromosomal,same strand,tail upstream	1803705
+MED1::STXBP4	mRNA-fusion	protein_coding	protein_coding	chr17:39404285-39451272:-	chr17:54968727-55173632:+	intra-chromosomal,opposite strand	Inf
+RAB22A::MYO9B	mRNA-fusion	protein_coding	protein_coding	chr20:58309715-58367507:+	chr19:17075777-17214537:+	inter-chromosomal	Inf
+RAB22A::HSALNG0124485	lncRNA-fusion	protein_coding	lncRNA	chr20:58309715-58367507:+	chr19:17102418-17152674:+	inter-chromosomal	Inf
+MED1::ACSF2	mRNA-fusion	protein_coding	protein_coding	chr17:39404285-39451272:-	chr17:50426158-50474845:+	intra-chromosomal,opposite strand	Inf
+MED13::BCAS3	mRNA-fusion	protein_coding	protein_coding	chr17:61942605-62065278:-	chr17:60677453-61392838:+	intra-chromosomal,opposite strand	Inf
+TOB1::SYNRG	mRNA-fusion	protein_coding	protein_coding	chr17:50862223-50867978:-	chr17:37514807-37609472:-	intra-chromosomal,same strand,tail downstream	13252751
+DIDO1::TTI1	mRNA-fusion	protein_coding	protein_coding	chr20:62877738-62937952:-	chr20:37983007-38033461:-	intra-chromosomal,same strand,tail downstream	24844277
+STARD3::DOK5	mRNA-fusion	protein_coding	protein_coding	chr17:39637090-39664201:+	chr20:54475593-54651169:+	inter-chromosomal	Inf
+BRD4::RFX1	mRNA-fusion	protein_coding	protein_coding	chr19:15235519-15332545:-	chr19:13961530-14007039:-	intra-chromosomal,same strand,tail downstream	1228480
+LAMP1::MCF2L	mRNA-fusion	protein_coding	protein_coding	chr13:113297239-113323672:+	chr13:112894378-113099742:+	intra-chromosomal,same strand,tail upstream	197497
+GLB1::HSALNG0024989	lncRNA-fusion	protein_coding	lncRNA	chr3:32996609-33097202:-	chr3:32391954-32454835:+	intra-chromosomal,opposite strand	Inf
+GLB1::CMTM7	mRNA-fusion	protein_coding	protein_coding	chr3:32996609-33097202:-	chr3:32391698-32483067:+	intra-chromosomal,opposite strand	Inf
+CPNE1::PI3	mRNA-fusion	protein_coding	protein_coding	chr20:35626031-35664956:-	chr20:45174902-45176544:+	intra-chromosomal,opposite strand	Inf
+ENSG00000272897::PI3	mRNA-fusion	protein_coding	protein_coding	chr20:35632340-35674544:-	chr20:45174902-45176544:+	intra-chromosomal,opposite strand	Inf
+ASTN2::HSALNG0074036	lncRNA-fusion	protein_coding	lncRNA	chr9:116423112-117415070:-	chr9:117838003-118024477:-	intra-chromosomal,same strand,tail upstream	422933
+FITM2::UQCC1	mRNA-fusion	protein_coding	protein_coding	chr20:44302840-44311202:-	chr20:35302566-35412031:-	intra-chromosomal,same strand,tail downstream	8890809
+HSALNG0117818::HEATR6	lncRNA-fusion	lncRNA	protein_coding	chr17:60078711-60099975:+	chr17:60041008-60078922:-	intra-chromosomal,opposite strand	Inf
+PIP4K2B::RAD51C	mRNA-fusion	protein_coding	protein_coding	chr17:38765691-38800126:-	chr17:58692573-58735611:+	intra-chromosomal,opposite strand	Inf
+PIP4K2B::HSALNG0117731	lncRNA-fusion	protein_coding	lncRNA	chr17:38765691-38800126:-	chr17:58730179-58734331:+	intra-chromosomal,opposite strand	Inf
