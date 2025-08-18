@@ -42,8 +42,9 @@ chmod 755 *.py
 ### Step 2: Download LIB folder from Dropbox
 ```bash
 cd /home/username/LncFusion
-wget -O Lib.tar.gz "https://www.dropbox.com/scl/fi/xaoqqnuv7eumb24htzt7e/Lib.tar.gz?rlkey=61ltq5bkrhjw4bgk7w9yzmw31&st=prwwkzn0&dl=1"
-tar -xzvf Lib.tar.gz
+wget -c https://zenodo.org/records/16867177/files/Lib.tar.gz?download=1
+tar -xzvf zenodo.org/records/16867177/files/Lib.tar.gz\?download\=1
+rm -f zenodo.org/records/16867177/files/Lib.tar.gz\?download\=1
 ```
 
 ## Running LncFusion
