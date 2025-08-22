@@ -22,6 +22,8 @@ To use LncFusion, you will need the following programs in your PATH:
 
 •       apptainer (>=1.3.5)
 
+•       singularity (>=3.7.1)
+
 •       python3 
 
 •       OS: high performance computing cluster in Linux (suggested)
@@ -89,6 +91,7 @@ Optional arguments:
 #BSUB -R span[hosts=1]
 
 module load apptainer/1.3.5
+module load singularity/3.7.1
 module load python3
 
 python3 LncFusion.py -1 Test_Data/BT474f_1.fq.gz -2 Test_Data/BT474f_2.fq.gz -o BT474f
