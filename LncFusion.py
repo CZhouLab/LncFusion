@@ -115,9 +115,11 @@ def ARRIBA(r1_fa, r2_fa, outputDir, CPU):
     os.chdir(current_directory)
 
 def STARSEQR(r1_fa, r2_fa, outputDir, CPU):
-    
+    if os.path.exists(outputDir + "_STAR-SEQR"):
+        os.system("rm -rf " + outputDir + "_STAR-SEQR")
+
     cmd = [
-        "apptainer",
+        "singularity",
         "exec",
         "Lib/starseqr_latest.sif",
         "starseqr.py",
