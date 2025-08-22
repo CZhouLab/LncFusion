@@ -64,8 +64,8 @@ LncFusion: A method to identify lncRNA-derived fusion transcripts from RNA-seq d
 
 Required arguments:
 
-	-1 --left_fq 	Path of the mate 1 file of paired FASTQ files, paired with the mate 2 file specified with "-2 " option.
-	-2 --right_fq 	Path of the mate 2 file of paired FASTQ files, paired with the mate 1 file specified with "-1 " option. 
+	-1 --left_fq 	Full Path of the mate 1 file of paired FASTQ files, paired with the mate 2 file specified with "-2 " option.
+	-2 --right_fq 	Full Path of the mate 2 file of paired FASTQ files, paired with the mate 1 file specified with "-1 " option. 
 
 Optional arguments:
 	-o --output_dir	Path of the output folder.
@@ -94,7 +94,7 @@ module load apptainer/1.3.5
 module load singularity/3.7.1
 module load python3
 
-python3 LncFusion.py -1 Test_Data/BT474f_1.fq.gz -2 Test_Data/BT474f_2.fq.gz -o BT474f
+python3 LncFusion.py -1 /home/username/LncFusion/Test_Data/BT474f_1.fq.gz -2 /home/username/LncFusion/Test_Data/BT474f_2.fq.gz -o ./BT474f
 ```
 **Submit the job to the cluster**
 ```bash
